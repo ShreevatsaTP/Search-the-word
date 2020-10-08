@@ -6,7 +6,13 @@ using namespace std;
 int main()
 {
     char arr[30][30];
-    int m = 3;int n = 3;
+    int m,n;
+    cout<<"Enter the number of elements in the array"<<endl;
+    cout<<" Row-wise ";
+    cin>>m;
+    cout<<" Column-wise ";
+    cin>>n;
+
     for(int i = 0;i<n;i++)
     {
          for(int j = 0;j<m;j++)
@@ -23,8 +29,9 @@ int main()
          }
          cout<<endl;
     }
-
-    string keyWord = "qwe";
+    cout<<"Enter the keyword ";
+    string keyWord;
+    cin>>keyWord;
     string ansString;
      for(int i = 0;i<n;i++)
     {
@@ -43,10 +50,6 @@ int main()
     cout<<ansString<<endl;
     if(ansString == keyWord)
         cout<<"word present row wise"<<endl;
-
-
-
-    //string keyWord = "qwe";
     ansString = "";
      for(int i = 0;i<n;i++)
     {
@@ -61,15 +64,11 @@ int main()
              }
          }
     }
-
     cout<<ansString<<endl;
     if(ansString == keyWord)
         cout<<"word present column wise"<<endl;
-
-
          ansString = "";
-  //   for(int i = 0;i<n;i++)
-    {
+
        int k=0;
        int i = 0;
          for(int j = 0;j<m;j++)
@@ -82,7 +81,7 @@ int main()
                  i++;
              }
          }
-    }
+
 
     cout<<ansString<<endl;
     if(ansString == keyWord)
